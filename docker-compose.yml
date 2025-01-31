@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  challenge_b:
+    build: .
+    volumes:
+      - ./data:/usr/src/app/data
+    environment:
+      - INPUT_FILE=/usr/src/app/data/input.txt
+      - OUTPUT_FILE=/usr/src/app/data/output.txt
